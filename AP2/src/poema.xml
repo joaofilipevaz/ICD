@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="Poema2.xsl"?>
+<?xml-stylesheet type="text/xsl" href="Poema3.xsl"?>
 <poema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="poema.xsd">
 	<autor>Luís de Camões</autor>
 	<título>Mudam-se os tempos, mudam-se as vontades</título>

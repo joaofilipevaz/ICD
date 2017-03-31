@@ -13,22 +13,14 @@
 
     </xsl:template>
     <xsl:template match="estrofe">
-        <xsl:value-of select="position()"/>
-        <xsl:if test="count(./verso) = 4">
-            <xsl:text> - Quadra </xsl:text>
-        </xsl:if>
-        <xsl:if test="count(./verso) = 3">
-            <xsl:text> - Terceto </xsl:text>
-        </xsl:if>
         <xsl:apply-templates select="./verso"/>
-        <br />
     </xsl:template>
 
     <xsl:template match="verso">
-        <p>
-            <xsl:value-of select="position()"/>
-            <xsl:text> - </xsl:text>
-            <xsl:value-of select="."/>
-        </p>
+        <xsl:if test="contains(., $searchword)">
+            <p>
+                <xsl:value-of select="."/>
+            </p>
+        </xsl:if>
     </xsl:template>
 </xsl:stylesheet>
